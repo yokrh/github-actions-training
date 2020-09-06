@@ -1,0 +1,22 @@
+# Ref
+# https://docs.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions
+# https://github.com/actions/setup-python
+
+name: Greet Everyone
+on: [push] # This workflow is triggered on pushes to the repository.
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
+      # - name: Display Python version
+      #   run: python my_script.py
