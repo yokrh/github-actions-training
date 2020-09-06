@@ -4,6 +4,8 @@ My test confluence
 
 https://yokrh.atlassian.net/wiki/spaces/TESTSPACE/pages/262306/content+1-1-a
 
+*NOTE:* **API_TOKEN has been revoked. Create new one if try new requests.**
+
 
 ## Confluence api
 
