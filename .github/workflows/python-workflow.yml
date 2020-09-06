@@ -18,5 +18,5 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
 
-      # - name: Display Python version
-      #   run: python my_script.py
+      - name: Display Python version
+        run: python .github/workflows/python-workflow/my_script.py
