@@ -1,0 +1,17 @@
+name: File
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - doc/sandbox/**.md
+        
+jobs:
+  job-a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
