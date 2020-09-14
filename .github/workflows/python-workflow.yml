@@ -4,16 +4,16 @@
 
 name: Greet Everyone
 on:
-  # [push] # This workflow is triggered on pushes to the repository.
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Person to greet'
-        required: true
-        default: 'Mona the Octocat'
-      home:
-        description: 'location'
-        required: false
+  [push] # This workflow is triggered on pushes to the repository.
+  # workflow_dispatch:
+  #   inputs:
+  #     name:
+  #       description: 'Person to greet'
+  #       required: true
+  #       default: 'Mona the Octocat'
+  #     home:
+  #       description: 'location'
+  #       required: false
 jobs:
   say_hello:
     runs-on: ubuntu-latest
